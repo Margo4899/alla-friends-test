@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Система отбора друзей Аллы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h1>Государственная система отбора друзей Аллы</h1>
+  <p class="sub">Доступ только для кандидатов</p>
+  <input id="loginInput" placeholder="Логин">
+  <input id="passInput" type="password" placeholder="Пароль">
+  <button onclick="auth()">Войти в систему</button>
+  <p id="error"></p>
+</div>
+
+<div id="game" class="hidden">
+  <h2>🥒 Испытание Кабачка 🥒</h2>
+  <div id="status"></div>
+
+  <div class="progress-wrap">
+    <div id="progress"></div>
+  </div>
+
+  <button onclick="attemptWin()">ПРОЙТИ ИСПЫТАНИЕ</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
